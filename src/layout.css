@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {  --font-display: "Arial", "sans-serif";  --breakpoint-3xl: 1920px;  --color-avocado-100: oklch(0.99 0 0);  --color-avocado-200: oklch(0.98 0.04 113.22);  --color-avocado-300: oklch(0.94 0.11 115.03);  --color-avocado-400: oklch(0.92 0.19 114.08);  --color-avocado-500: oklch(0.84 0.18 117.33);  --color-avocado-600: oklch(0.53 0.12 118.34);  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);  /* ... */}
+
+
+:root, [data-theme="light"] {
+  --bg-primary: #ffffff;
+  --text-primary: #1f2937;
+  --accent: #3b82f6;
+  min-height: 100%;
+}
+
+img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+#galeria {
+  @apply flex pl-4 pr-4 flex-row;
+} 
+
+#root {
+  flex: 1;
+  @apply flex-grow;
+}
+
+body {
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.link {
+  @apply text-white bg-olive-500;
+}
+
+.padding {
+  @apply p-4  pr-16 pl-16 ;
+}
+.formulario {
+  @apply w-64 h-64 bg-red-50 border border-gray-200 rounded-lg shadow-md p-6 flex justify-center items-center 
+}
+
+.caixaContainer {
+  @apply bg-green-50 p-4;
+}
+
+.caixa {
+  @apply h-full w-full  bg-green-100 border border-gray-200 rounded-lg shadow-md p-6 ;
+}
+
+.pCaixa {
+  @apply w-full h-full bg-green-200;
+}
+
+.titleCaixa {
+  @apply w-full h-full text-black font-bold break-all;
+}
+
+.title {
+  @apply w-full h-full bg-slate-900 text-white p-4 flex items-center justify-center  bg-blue-500 shadow-md font-[Arial];
+}
+.pull-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.h1 {
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+
+}
